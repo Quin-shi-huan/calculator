@@ -15,7 +15,7 @@ class Calculator_4:
 
     def __validate_body(self, body: Dict) -> float:
         if "numbers" not in body:
-            raise HttpUnprocessableEntityError("body mal formatado!")
+            raise HttpUnprocessableEntityError("Lista de números não fornecida ou mal formatada!")
 
         input_data = body["numbers"]
         return input_data
