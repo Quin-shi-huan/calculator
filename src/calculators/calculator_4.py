@@ -8,8 +8,8 @@ class Calculator_4:
         body = request.json
         input_data = self.__validate_body(body)
 
-        media_result = self.__calculate_list_media(input_data)
-        response = self.__format_response(media_result)
+        average = self.__calculate_list_media(input_data)
+        response = self.__format_response(average)
 
         return response
 
@@ -25,10 +25,10 @@ class Calculator_4:
         second_part = first_part / len(list_numbers)
         return second_part
 
-    def __format_response(self, media_result: float) -> Dict:
+    def __format_response(self, average: float) -> Dict:
         return {
             "data": {
                 "Calculator": 4,
-                "average": round(media_result, 2)
+                "average": round(average, 2)
             }
         }
