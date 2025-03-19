@@ -29,6 +29,6 @@ class Calculator_4:
         return {
             "data": {
                 "Calculator": 4,
-                "result": round(media_result, 3)
+                "average": round(media_result, 2)
             }
         }

@@ -17,6 +17,6 @@ def test_calculate_media():
     assert response == {
                 "data": {
                     "Calculator": 4,
-                    "result": 5
+                    "average": 5
                 }
             }
